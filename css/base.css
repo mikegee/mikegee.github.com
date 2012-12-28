@@ -25,15 +25,16 @@ a {
   .sidebar .name {
     text-transform: uppercase;
     margin: 10px 0 20px 0; }
-    .sidebar .name #zach {
+    .sidebar .name #mike {
       padding-left: 1px;
-      font-size: 23px;
-      letter-spacing: 5px;
+      font-size: 24px;
+      letter-spacing: 4px;
       color: black; }
-    .sidebar .name #holman {
-      font-size: 17px;
+    .sidebar .name #gee {
+      padding-left: 1px;
+      font-size: 28px;
       font-weight: bold;
-      letter-spacing: 1px;
+      letter-spacing: 6px;
       color: black; }
   .sidebar .meta a {
     margin-left: 0px;
