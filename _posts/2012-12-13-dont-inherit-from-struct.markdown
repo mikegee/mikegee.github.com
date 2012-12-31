@@ -11,7 +11,7 @@ Number 64 caught my attention because I've been writing utility classes that inh
 
 For example, instead of this:
 {% highlight ruby %}
-class Name &lt; Struct.new(:first, :last)
+class Name < Struct.new(:first, :last)
   def full
     "#{first} #{last}"
   end
