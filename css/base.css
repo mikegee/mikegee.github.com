@@ -21,7 +21,7 @@ a {
   .sidebar .avatar {
     padding: 0;
     margin-left: 2px;
-    border-radius: 5px; }
+    border-radius: 10px; }
   .sidebar .name {
     text-transform: uppercase;
     margin: 10px 0 20px 0; }
@@ -60,7 +60,8 @@ a {
 
 .content {
   margin-left: 110px;
-  width: 650px;
+  max-width: 40em;
+  margin-right: 2em;
   margin-bottom: 50px; }
   .content h1 {
     color: #333;
