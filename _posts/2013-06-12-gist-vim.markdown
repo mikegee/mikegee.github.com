@@ -1,0 +1,15 @@
+---
+layout: post
+category: posts
+title: Gist-Vim
+---
+
+There's a bunch of good stuff in the is presentation by Chris Hunt: [Impressive Ruby Productivity with Vim and Tmux](http://www.youtube.com/watch?v=gB-JSh1EVME).  I want to implement most of what he's doing.
+
+Let's start small.
+
+[Gist-Vim](https://github.com/mattn/gist-vim) is vim plugin that can post the file you're editing to gist.github.com with one simple command.  It has every other feature you might want regarding gists.
+
+Installation using Vundle is fairly straightforward.  [The instructions are in the README.](https://github.com/mattn/gist-vim#install-with-vundle)  I made the mistake of attempting to run `:BundleInstall` while still editing my `.vimrc.bundles`.  Turns out, you need to close and reopen vim to run `:BundleInstall`.
+
+I might want to make it post the gist to [my employer](https://www.covermymeds.com)'s github enterprise installation.  To do so, just modify `github.apiurl` in `~/.gitconfig` ([implementation](https://github.com/mattn/gist-vim/blob/master/autoload/gist.vim#L33)).  I could also run `let g:github_api_url = 'http://your-github-enterprise-domain/api/v3'` within vim, [as documented here](https://github.com/mattn/gist-vim/blob/master/doc/gist-vim.txt#L155).
